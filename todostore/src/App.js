@@ -5,7 +5,7 @@ import {configure} from "mobx"
 import {action} from "mobx"
 import {computed} from "mobx"
 
-configure({enforceActions: true})
+configure({enforceActions: "observed"})
 
 class Store {
   employeesList = [
